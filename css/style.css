@@ -7,7 +7,13 @@
 }
 
 :root {
-  --dark-color: #000;
+  --dark-color: #2B0A10;
+  --burgundy: #3D0C11;
+  --blush: #F8C8DC;
+  --blush-deep: #E8A0BF;
+  --cream: #FAF0E6;
+  --soft-gold: #E6C86A;
+  --gold-deep: #D4AF37;
 }
 
 .title {
@@ -17,10 +23,10 @@
   margin-top: 50px;
   top: 0;
   left: 0;
-  color: white;
+  color: var(--cream);
   font-family: 'Courier New', Courier, monospace;
   font-size: 70px;
-  text-shadow: 0px 0px 20px white;
+  text-shadow: 0px 0px 20px var(--soft-gold), 0px 0px 40px rgba(230, 200, 106, 0.5);
 }
 
 body {
@@ -41,7 +47,7 @@ body {
   width: 100%;
   height: 100%;
   filter: blur(0.1vmin);
-  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(255, 255, 250), rgb(240, 240, 240));
+  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(248, 200, 220, 0.25)), repeating-linear-gradient(220deg, var(--burgundy) 0px, var(--burgundy) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, var(--burgundy) 0px, var(--burgundy) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, var(--burgundy) 0px, var(--burgundy) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, var(--cream), #F0E4D0);
 }
 
 .flowers {
@@ -168,7 +174,7 @@ body {
   transform: translate(-50%, -100%);
   width: 8vmin;
   height: 8vmin;
-  background-color: #fff;
+  background-color: var(--soft-gold);
   filter: blur(10vmin);
 }
 
@@ -179,11 +185,11 @@ body {
   width: 8vmin;
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
-  background-color: #a7ffee;
-  background-image: linear-gradient(to top, #fff, #fff);
+  background-color: var(--blush);
+  background-image: linear-gradient(to top, var(--cream), var(--blush));
   transform-origin: bottom center;
   opacity: 0.9;
-  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 2vmin rgba(250, 240, 230, 0.6);
 }
 
 .flower__leaf--1 {
@@ -204,7 +210,7 @@ body {
   transform-origin: bottom left;
   border-radius: 4vmin 10vmin 4vmin 4vmin;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-  background-image: linear-gradient(to top, rgba(255, 2555, 255, 0.4), #fff);
+  background-image: linear-gradient(to top, rgba(248, 200, 220, 0.4), var(--cream));
   z-index: 1;
   opacity: 0.8;
   -webkit-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
@@ -220,7 +226,7 @@ body {
   width: 9vmin;
   height: 4vmin;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--cream);
 }
 
 .flower__white-circle::after {
@@ -232,14 +238,14 @@ body {
   width: 60%;
   height: 60%;
   border-radius: inherit;
-  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(157.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, rgb(255, 235, 18), rgb(255, 206, 0));
+  background-image: repeating-linear-gradient(135deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(157.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(61, 12, 17, 0.03) 0px, rgba(61, 12, 17, 0.03) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, var(--soft-gold), var(--gold-deep));
 }
 
 .flower__line {
   height: 55vmin;
   width: 1.5vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #fff, #fff);
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to left, rgba(61, 12, 17, 0.3), transparent, rgba(248, 200, 220, 0.2)), linear-gradient(to top, transparent 10%, var(--blush-deep), var(--blush));
+  box-shadow: inset 0 0 2px rgba(61, 12, 17, 0.5);
   animation: grow-flower-tree 4s backwards;
 }
 
@@ -253,7 +259,7 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), #fff);
+  background-image: linear-gradient(to top, rgba(248, 200, 220, 0.4), var(--blush));
 }
 
 .flower__line__leaf--1 {
@@ -299,14 +305,14 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  background-color: rgb(255, 251, 0);
+  background-color: var(--soft-gold);
   border-radius: 50%;
   filter: blur(0.2vmin);
   animation: light-ans 4s linear infinite backwards;
 }
 
 .flower__light:nth-child(odd) {
-  background-color: #fff;
+  background-color: var(--cream);
 }
 
 .flower__light--1 {
@@ -350,7 +356,7 @@ body {
 }
 
 .flower__grass {
-  --c: #fff;
+  --c: var(--cream);
   --line-w: 1.5vmin;
   position: absolute;
   bottom: 12vmin;
@@ -529,7 +535,7 @@ body {
   right: 0%;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(43, 10, 16, 0.6);
   filter: blur(1.5vmin);
   z-index: 100;
 }
@@ -537,7 +543,7 @@ body {
 .flower__g-long {
   --w: 2vmin;
   --h: 6vmin;
-  --c: #fff;
+  --c: var(--cream);
   position: absolute;
   bottom: 10vmin;
   left: -3vmin;
@@ -592,9 +598,9 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #fff;
+  border-left: 2vmin solid var(--blush-deep);
   background-image: linear-gradient(to bottom, transparent, var(--dark-color) 60%);
-  -webkit-mask-image: linear-gradient(to top, transparent 30%, #fff 60%);
+  -webkit-mask-image: linear-gradient(to top, transparent 30%, var(--cream) 60%);
 }
 
 .flower__g-right--1 {
@@ -662,7 +668,7 @@ body {
 .flower__g-front__line {
   width: 0.3vmin;
   height: 20vmin;
-  background-image: linear-gradient(to top, transparent, #fff, transparent 100%);
+  background-image: linear-gradient(to top, transparent, var(--cream), transparent 100%);
   position: relative;
 }
 
@@ -764,9 +770,9 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
-  -webkit-mask-image: linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
-  mask-image: linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, var(--cream) 50%, transparent 50%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom right, var(--cream) 50%, transparent 50%, transparent);
+  mask-image: linear-gradient(to bottom right, var(--cream) 50%, transparent 50%, transparent);
 }
 
 .flower__g-fr {
@@ -798,8 +804,8 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #fff;
-  -webkit-mask-image: linear-gradient(to top, transparent 25%, #fff 50%);
+  border-left: 2vmin solid var(--blush-deep);
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, var(--cream) 50%);
   position: relative;
   z-index: 1;
 }
@@ -812,8 +818,8 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, #fff 45%, transparent 50%, transparent);
-  -webkit-mask-image: linear-gradient(135deg, #fff 40%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, var(--cream) 45%, transparent 50%, transparent);
+  -webkit-mask-image: linear-gradient(135deg, var(--cream) 40%, transparent 50%, transparent);
 }
 
 .flower__g-fr__leaf--1 {
@@ -994,14 +1000,14 @@ body {
 .long-g .leaf {
   --w: 15vmin;
   --h: 40vmin;
-  --c: #1aaa15;
+  --c: var(--burgundy);
   position: absolute;
   bottom: 0;
   width: var(--w);
   height: var(--h);
   border-top-left-radius: 100%;
   border-left: 2vmin solid var(--c);
-  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--dark-color));
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, #000);
   transform-origin: bottom center;
 }
 
@@ -1211,6 +1217,118 @@ body {
 
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+.title {
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
+  margin-top: 20px;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 120px;
+  padding: 0 1.5rem;
+  color: var(--blush);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  opacity: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(230, 200, 106, 0.35);
+  transition: opacity 1.2s ease-in-out;
+}
+
+.message--visible {
+  opacity: 1;
+}
+
+.our-story {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 1.4s ease-in-out, transform 1.4s ease-in-out;
+  pointer-events: none;
+}
+
+.our-story--visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.our-story__text {
+  color: var(--cream);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 10px rgba(230, 200, 106, 0.4);
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.btn--story {
+  border: none;
+  width: clamp(12em, 35vw, 15em);
+  height: 4.2em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--burgundy);
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  box-shadow: 0 0 20px rgba(61, 12, 17, 0.5);
+  text-decoration: none;
+}
+
+.btn--story:hover {
+  background: linear-gradient(0deg, var(--blush), #C97B8C);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(61, 12, 17, 0.2),
+    0px 0px 0px 4px rgba(230, 200, 106, 0.3),
+    0px 0px 100px 0px rgba(232, 160, 191, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn--story .text {
+  font-weight: 600;
+  color: var(--cream);
+  font-size: 0.95rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn--story:hover .text {
+  color: var(--dark-color);
+}
+
+.btn--story .sparkle {
+  fill: var(--soft-gold);
+  transition: all 800ms ease;
+}
+
+.btn--story:hover .sparkle {
+  fill: var(--dark-color);
+  transform: scale(1.2);
+}
+
+@media (min-width: 500px) {
+  .message {
+    margin-top: 140px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
